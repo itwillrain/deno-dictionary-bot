@@ -1,4 +1,5 @@
 import { App } from "./deps.ts";
+import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 
 const app = new App({
   signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
