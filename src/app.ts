@@ -1,7 +1,5 @@
-import { config } from "https://deno.land/std@0.148.0/dotenv/mod.ts";
+import "https://deno.land/std@0.148.0/dotenv/load.ts";
 import { App } from "https://deno.land/x/slack_bolt@1.0.0/mod.ts";
-
-console.log(await config());
 
 const app = new App({
   signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
