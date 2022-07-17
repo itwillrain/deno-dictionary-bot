@@ -4,8 +4,6 @@ import { App } from "https://deno.land/x/slack_bolt@1.0.0/mod.ts";
 const app = new App({
   signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
   token: Deno.env.get("SLACK_BOT_TOKEN"),
-  appToken: Deno.env.get("SLACK_APP_TOKEN"),
-  socketMode: true,
   ignoreSelf: true,
 });
 
