@@ -6,11 +6,11 @@ console.log(
   Deno.env.get("SLACK_BOT_TOKEN")
 );
 
-// const app = new App({
-//   signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
-//   token: Deno.env.get("SLACK_BOT_TOKEN"),
-//   ignoreSelf: true,
-// });
+const app = new App({
+  signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
+  token: Deno.env.get("SLACK_BOT_TOKEN"),
+  ignoreSelf: true,
+});
 
-// await app.start({ port: 3000 });
-// console.log("🦕 ⚡️Bolt app is running!");
+await app.start({ port: 3000 });
+console.log("🦕 ⚡️Bolt app is running!");
