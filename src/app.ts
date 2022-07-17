@@ -10,4 +10,4 @@ console.log(config);
 // });
 
 // await app.start({ port: 3000 });
-console.log("🦕 ⚡️Bolt app is running!");
+// console.log("🦕 ⚡️Bolt app is running!");
