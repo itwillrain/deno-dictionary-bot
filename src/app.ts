@@ -11,7 +11,5 @@ app.event("app_home_opened", async ({ event, say }) => {
   await say(`Hello world, <@${event.user}>!`);
 });
 
-app.message("", async ({}) => {});
-
 await app.start({ port: 3000 });
 console.log("🦕 ⚡️Bolt app is running!");
