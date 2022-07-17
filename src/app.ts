@@ -1,7 +1,10 @@
 import { App, config } from "./deps.ts";
 import "https://deno.land/x/dotenv@v3.2.0/load.ts";
 
-console.log(Deno.env.get("SLACK_SIGNING_SECRET"));
+console.log(
+  Deno.env.get("SLACK_SIGNING_SECRET"),
+  Deno.env.get("SLACK_BOT_TOKEN")
+);
 
 // const app = new App({
 //   signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
