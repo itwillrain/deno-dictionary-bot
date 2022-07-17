@@ -1,7 +1,8 @@
-import { App, env } from "./deps.ts";
+import { App } from "./deps.ts";
+
 const app = new App({
-  signingSecret: env.get("SLACK_SIGNING_SECRET"),
-  token: env.get("SLACK_BOT_TOKEN"),
+  signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
+  token: Deno.env.get("SLACK_BOT_TOKEN"),
   ignoreSelf: true,
 });
 
