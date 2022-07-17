@@ -1,9 +1,7 @@
-import "https://deno.land/std@0.148.0/dotenv/load.ts";
-import { App } from "https://deno.land/x/slack_bolt@1.0.0/mod.ts";
-
+import { App, env } from "./deps.ts";
 const app = new App({
-  signingSecret: Deno.env.get("SLACK_SIGNING_SECRET"),
-  token: Deno.env.get("SLACK_BOT_TOKEN"),
+  signingSecret: env.get("SLACK_SIGNING_SECRET"),
+  token: env.get("SLACK_BOT_TOKEN"),
   ignoreSelf: true,
 });
 
